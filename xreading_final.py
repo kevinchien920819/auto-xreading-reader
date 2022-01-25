@@ -56,7 +56,7 @@ def wait_and_page_turn(wpp,wpm):
         # prevnt scroll fail and quit current page i divide them in 5 pieces and scroll for 5 times
         stage = 1
         for j in range (6):
-            waittime = (float(wpp) / float(wpm) * 60.0 + random.randint(1,10)) / 5 
+            waittime = (float(wpp) / float(wpm) * 60.0 + random.randint(1,10) * 4) / 5 
             while(waittime > 0):
                 time.sleep(3)
                 waittime -=3
