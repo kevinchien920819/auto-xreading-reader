@@ -1,10 +1,6 @@
-from binhex import Error
-import win32
 from selenium import webdriver
 import time
 import pyautogui
-import requests 
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -87,18 +83,12 @@ def studentinfo():
         return student_id
 
 
-# def sleeptime(hour,min,sec):
-# 	return hour*3600 + min*60 + sec;
-# second = sleeptime(0,0,20);
-# while 1==1:
-# 	time.sleep(second)
-
 student_id = studentinfo()
 wpm = int(input('word per minutes:'))
 wpp = int(input('word per page:'))
 wait_flag = input('if true press y:')
 url = 'https://xreading.com/login/index.php'
-browser = webdriver.Chrome('G:/CODE/phython_doc/xreading/chromedriver.exe')
+browser = webdriver.Chrome('G:/CODE/phython_doc/xreading/chromedriver.exe')#change the path here
 browser.get(url)
 browser.maximize_window()
 login(student_id)
