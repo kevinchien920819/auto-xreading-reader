@@ -72,7 +72,7 @@ def wait_and_page_turn(wpp,wpm):
 
         winsound.PlaySound('SystemExclamation',winsound.SND_ALIAS) 
  
-#enter your student information
+#enter your student information 
 def studentinfo():
     student_id = str(input('input student id:'))
     print(f'your id is :{student_id}')
