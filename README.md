@@ -4,7 +4,8 @@
 
 # Notice!!!!!
 * 輸入法須為英文!!!!!!
-* chrome driver版本要跟電腦的版本相符
+* chrome driver版本要跟電腦的版本相符 
+* https://helpcenter.trendmicro.com/zh-tw/article/tmka-08277/ (查看你的chrome 版本)
 * https://chromedriver.chromium.org/downloads (chrome driver 下載網址)
 # package:
 * 執行前先確定有沒有這些packpage
