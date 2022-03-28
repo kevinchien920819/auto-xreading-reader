@@ -1,4 +1,4 @@
-[TOC]
+
 # Description
 這是一個可以幫你自動完成xreading的外掛程式
 
@@ -12,9 +12,8 @@
  - 在terminal輸入pip install (要裝的package)
  - 1. selenium
  - 2. pyautogui
- - 3. random
 # How to use:
-- 1. 更改註解裡面的path(101行)
+- 1. 更改註解裡面的path(91行)
 - 2. 執行程式輸入學號
 - 3. 輸入 wpm(一分鐘讀多少字)
 - 4. 輸入 wpp(一頁有多少字)
