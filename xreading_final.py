@@ -80,8 +80,8 @@ def studentinfo():
         print("Error: fake student_id or type error")
         studentinfo()
     else:
+        student_id = student_id.upper()
         return student_id
-
 
 student_id = studentinfo()
 wpm = int(input('word per minutes:'))
