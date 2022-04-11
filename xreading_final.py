@@ -13,13 +13,9 @@ import random
 def login(student_id):
     time.sleep(3)
     # find username buttom
-    target = browser.find_element(By.XPATH,'//*[@id="username"]')
-    target.click()
-    pyautogui.typewrite([student_id[0],student_id[1],student_id[2],student_id[3],student_id[4],student_id[5],student_id[6],student_id[7],'@','o','3','6','5','.','f','c','u','.','e','d','u','.','t','w'],'0.25')
+    target = browser.find_element(By.XPATH,'//*[@id="username"]').send_keys(student_id + '@o365.fcu.edu.tw')
     # find pwd buttom
-    target = browser.find_element(By.XPATH,'//*[@id="password"]')
-    target.click()
-    pyautogui.typewrite([student_id[0],student_id[1],student_id[2],student_id[3],student_id[4],student_id[5],student_id[6],student_id[7]],'0.25')
+    target = browser.find_element(By.XPATH,'//*[@id="password"]').send_keys(student_id)
     # find login buttom
     target = browser.find_element(By.XPATH,'//*[@id="loginbtn"]')
     target.click()
