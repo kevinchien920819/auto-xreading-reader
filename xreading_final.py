@@ -1,6 +1,5 @@
 from selenium import webdriver
 import time
-import pyautogui
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -84,7 +83,7 @@ wpm = int(input('word per minutes:'))
 wpp = int(input('word per page:'))
 wait_flag = input('if true press y:')
 url = 'https://xreading.com/login/index.php'
-browser = webdriver.Chrome('G:/CODE/phython_doc/xreading/chromedriver.exe')#change the path here
+browser = webdriver.Chrome('C:\\Users\\chromedriver.exe')#change the path here
 browser.get(url)
 browser.maximize_window()
 login(student_id)
